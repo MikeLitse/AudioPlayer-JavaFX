@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="517.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller2">
+   <children>
+      <ComboBox fx:id="songsBox" layoutX="42.0" layoutY="151.0" prefHeight="25.0" prefWidth="215.0" />
+      <Button fx:id="AddButton" layoutX="42.0" layoutY="96.0" mnemonicParsing="false" onAction="#addSong" prefHeight="41.0" prefWidth="79.0" text="Add" style="-fx-border-color: white; -fx-background-color: black;">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="playlistCombo" layoutX="425.0" layoutY="151.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextArea fx:id="nameArea" layoutX="484.0" layoutY="102.0" prefHeight="37.0" prefWidth="156.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="425.0" layoutY="102.0" prefHeight="37.0" prefWidth="58.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="SaveButton" layoutX="42.0" layoutY="381.0" mnemonicParsing="false" onAction="#saveAndReturn" prefHeight="44.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: black;" text="Save and Return" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ReturnButton" layoutX="425.0" layoutY="384.0" mnemonicParsing="false" onAction="#returntoscene" prefHeight="37.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: black;" text="Return" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
